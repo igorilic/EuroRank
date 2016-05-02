@@ -5,7 +5,8 @@ var Match = new Schema({
     finished: Boolean,
     competition: String,
     date: {
-        type: Date
+        type: Date,
+        default: Date.now()
     },
     season: String,
     playoffs: Boolean,

@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
 var app = express();
-
+//CORS middleware, required for cross origin server request
 app.use(cors());
 var db = mongoose.connect('mongodb://eurorank:sarma123@ds011422.mlab.com:11422/eurorank');
 var Team = require('./models/team');
